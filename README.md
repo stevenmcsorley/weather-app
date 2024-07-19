@@ -12,7 +12,7 @@ To get started with the weather app, follow these steps:
 
 ## Development
 
-HRM is enabled so dev can be done localy with the ability to see changes in real time in the docker container.
+HRM is enabled so development can be done locally with the ability to see changes in real-time in the Docker container.
 
 ## Docker
 
@@ -43,8 +43,7 @@ npm run generate report
 
 open report in browser 'e2e\reports\index.html'
 
-This also a has a feature I was working on which will automatically create Jira tickets from any of the failed steps,
-at the moment it generates a json file for each one.
+This also has a feature I was working on which will automatically create Jira tickets from any of the failed steps. At the moment, it generates a JSON file for each one.
 
 ## Styling
 

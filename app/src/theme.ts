@@ -1,31 +1,31 @@
 import { createTheme } from "@mui/material/styles";
 import { blue, cyan, green, amber, red, grey } from "@mui/material/colors";
 
-// Create a theme instance.
+/// base to theme to work with dark mode
 const theme = createTheme({
   palette: {
-    mode: "dark", // Enable dark mode
+    mode: "dark",
     primary: {
-      main: cyan[100], // Adjusted to be more visible on dark background
+      main: cyan[100],
       contrastText: "#fff",
     },
     secondary: {
-      main: green[400], // Adjusted to be more visible on dark background
+      main: green[400],
       contrastText: "#fff",
     },
     warning: {
-      main: amber[500], // Warm yellow for warnings or sunny days
+      main: amber[500],
       contrastText: "#000",
     },
     error: {
       main: red.A400,
     },
     background: {
-      default: grey[900], // Dark grey background for the app
-      paper: grey[800], // Slightly lighter grey for cards and other surfaces
+      default: grey[900],
+      paper: grey[800],
     },
     text: {
-      primary: "#fff", // Light text for better readability on dark background
+      primary: "#fff",
       secondary: grey[500],
     },
   },
@@ -59,17 +59,17 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: "8px", // Rounded corners for buttons
-          textTransform: "none", // No uppercase text
+          borderRadius: "8px",
+          textTransform: "none",
         },
       },
     },
     MuiCard: {
       styleOverrides: {
         root: {
-          borderRadius: "12px", // Rounded corners for cards
-          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)", // Slightly stronger shadow for dark theme
-          backgroundColor: grey[800], // Ensuring the card background is dark
+          borderRadius: "12px",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
+          backgroundColor: grey[800],
         },
       },
     },
