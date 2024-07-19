@@ -1,7 +1,7 @@
 import {
   ClientStyleContext_default,
   theme_default
-} from "/build/_shared/chunk-CMBOS7JF.js";
+} from "/build/_shared/chunk-SD3JIY2B.js";
 import {
   AppBar_default,
   Box_default,
@@ -9,18 +9,15 @@ import {
   Container_default,
   Toolbar_default,
   Typography_default,
+  require_node,
   useEnhancedEffect_default
-} from "/build/_shared/chunk-2JNT76UT.js";
+} from "/build/_shared/chunk-UO2AQSH4.js";
 import {
   init_emotion_react_browser_esm,
   styled_default,
   withEmotionCache
-} from "/build/_shared/chunk-SB7HBWVQ.js";
+} from "/build/_shared/chunk-FFFQLQI3.js";
 import "/build/_shared/chunk-PLT55Z5M.js";
-import "/build/_shared/chunk-Y6RJRNBS.js";
-import {
-  require_node
-} from "/build/_shared/chunk-NBEH4DGX.js";
 import {
   Form,
   Links,
@@ -34,16 +31,17 @@ import {
   useLoaderData,
   useRouteError
 } from "/build/_shared/chunk-XU2DGYEO.js";
+import "/build/_shared/chunk-Y6RJRNBS.js";
+import {
+  createHotContext
+} from "/build/_shared/chunk-VBXOWJ6H.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-F4KNNEUR.js";
 import {
-  createHotContext
-} from "/build/_shared/chunk-VBXOWJ6H.js";
-import "/build/_shared/chunk-JR22VO6P.js";
-import {
   require_react
 } from "/build/_shared/chunk-2Z2JGDFU.js";
+import "/build/_shared/chunk-JR22VO6P.js";
 import {
   __toESM
 } from "/build/_shared/chunk-PZDJHGND.js";
@@ -114,7 +112,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/NavBar.tsx"
   );
-  import.meta.hot.lastModified = "1721392968228.842";
+  import.meta.hot.lastModified = "1721393950067.1274";
 }
 var StyledNavLink = styled_default(NavLink)(({
   theme
@@ -137,43 +135,25 @@ function NavBar({
       flexGrow: 1
     }, children: "WeatherApp" }, void 0, false, {
       fileName: "app/components/NavBar.tsx",
-      lineNumber: 44,
+      lineNumber: 42,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Button_default, { color: "inherit", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(StyledNavLink, { to: "/", end: true, children: "Home" }, void 0, false, {
       fileName: "app/components/NavBar.tsx",
-      lineNumber: 50,
+      lineNumber: 48,
       columnNumber: 11
     }, this) }, void 0, false, {
       fileName: "app/components/NavBar.tsx",
-      lineNumber: 49,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Button_default, { color: "inherit", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(StyledNavLink, { to: "/posts", prefetch: "intent", children: "Posts" }, void 0, false, {
-      fileName: "app/components/NavBar.tsx",
-      lineNumber: 55,
-      columnNumber: 11
-    }, this) }, void 0, false, {
-      fileName: "app/components/NavBar.tsx",
-      lineNumber: 54,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Button_default, { color: "inherit", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(StyledNavLink, { to: "/createPost", children: "Create Post" }, void 0, false, {
-      fileName: "app/components/NavBar.tsx",
-      lineNumber: 60,
-      columnNumber: 11
-    }, this) }, void 0, false, {
-      fileName: "app/components/NavBar.tsx",
-      lineNumber: 59,
+      lineNumber: 47,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Button_default, { color: "inherit", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(StyledNavLink, { to: "/weather", children: "Weather" }, void 0, false, {
       fileName: "app/components/NavBar.tsx",
-      lineNumber: 63,
+      lineNumber: 53,
       columnNumber: 11
     }, this) }, void 0, false, {
       fileName: "app/components/NavBar.tsx",
-      lineNumber: 62,
+      lineNumber: 52,
       columnNumber: 9
     }, this),
     userId ? /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_jsx_dev_runtime2.Fragment, { children: [
@@ -182,42 +162,41 @@ function NavBar({
         mr: 2
       }, children: [
         "Welcome, ",
-        username || userId,
-        " "
+        username || userId
       ] }, void 0, true, {
         fileName: "app/components/NavBar.tsx",
-        lineNumber: 66,
+        lineNumber: 56,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Form, { method: "post", action: "/logout", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Button_default, { color: "inherit", type: "submit", children: "Logout" }, void 0, false, {
         fileName: "app/components/NavBar.tsx",
-        lineNumber: 73,
+        lineNumber: 63,
         columnNumber: 15
       }, this) }, void 0, false, {
         fileName: "app/components/NavBar.tsx",
-        lineNumber: 72,
+        lineNumber: 62,
         columnNumber: 13
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/NavBar.tsx",
-      lineNumber: 65,
+      lineNumber: 55,
       columnNumber: 19
     }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Button_default, { color: "inherit", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(StyledNavLink, { to: "/login", children: "Login" }, void 0, false, {
       fileName: "app/components/NavBar.tsx",
-      lineNumber: 78,
+      lineNumber: 68,
       columnNumber: 13
     }, this) }, void 0, false, {
       fileName: "app/components/NavBar.tsx",
-      lineNumber: 77,
+      lineNumber: 67,
       columnNumber: 17
     }, this)
   ] }, void 0, true, {
     fileName: "app/components/NavBar.tsx",
-    lineNumber: 43,
+    lineNumber: 41,
     columnNumber: 7
   }, this) }, void 0, false, {
     fileName: "app/components/NavBar.tsx",
-    lineNumber: 42,
+    lineNumber: 40,
     columnNumber: 10
   }, this);
 }
@@ -251,7 +230,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/root.tsx"
   );
-  import.meta.hot.lastModified = "1721392896428.7336";
+  import.meta.hot.lastModified = "1721394256643.7344";
 }
 var Document = _s(withEmotionCache(_c3 = _s(({
   children,
@@ -496,4 +475,4 @@ export {
   ErrorBoundary,
   App as default
 };
-//# sourceMappingURL=/build/root-6M3IR4V2.js.map
+//# sourceMappingURL=/build/root-27TXUUJX.js.map

@@ -1,4 +1,4 @@
-import { json, redirect } from "@remix-run/node";
+import { redirect } from "@remix-run/node";
 import prisma from "../prismaClient";
 import { getSession } from "../sessions";
 
@@ -76,7 +76,10 @@ export async function handleCityUpdate(
 
       return { success: `Added city: ${cityName}` };
     } catch (error) {
-      return { error: `Error adding city: ${error.message}` };
+      if (error instanceof Error) {
+        return { error: `Error adding city: ${error.message}` };
+      }
+      return { error: "An unknown error occurred while adding the city." };
     }
   } else if (action === "remove") {
     if (typeof city !== "string")

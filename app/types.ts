@@ -1,14 +1,3 @@
-export interface PostData {
-  id?: number;
-  title: string;
-  subtitle?: string;
-  content: string;
-  author?: string;
-  date?: string;
-  slug: string;
-  userid?: string;
-}
-
 export type WeatherData = {
   location?: {
     name: string;

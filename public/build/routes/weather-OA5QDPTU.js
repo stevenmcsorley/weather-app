@@ -12,33 +12,31 @@ import {
   TextField_default,
   Typography_default,
   init_utils,
+  require_node,
   utils_exports
-} from "/build/_shared/chunk-2JNT76UT.js";
+} from "/build/_shared/chunk-UO2AQSH4.js";
 import {
   require_interopRequireDefault
-} from "/build/_shared/chunk-SB7HBWVQ.js";
+} from "/build/_shared/chunk-FFFQLQI3.js";
 import "/build/_shared/chunk-PLT55Z5M.js";
-import {
-  require_jsx_runtime
-} from "/build/_shared/chunk-Y6RJRNBS.js";
-import {
-  require_node
-} from "/build/_shared/chunk-NBEH4DGX.js";
 import {
   useActionData,
   useFetcher,
   useLoaderData
 } from "/build/_shared/chunk-XU2DGYEO.js";
 import {
-  require_jsx_dev_runtime
-} from "/build/_shared/chunk-F4KNNEUR.js";
+  require_jsx_runtime
+} from "/build/_shared/chunk-Y6RJRNBS.js";
 import {
   createHotContext
 } from "/build/_shared/chunk-VBXOWJ6H.js";
-import "/build/_shared/chunk-JR22VO6P.js";
+import {
+  require_jsx_dev_runtime
+} from "/build/_shared/chunk-F4KNNEUR.js";
 import {
   require_react
 } from "/build/_shared/chunk-2Z2JGDFU.js";
+import "/build/_shared/chunk-JR22VO6P.js";
 import {
   __commonJS,
   __toCommonJS,
@@ -590,7 +588,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/routes/weather.tsx"
   );
-  import.meta.hot.lastModified = "1721393348866.3809";
+  import.meta.hot.lastModified = "1721394790019.6506";
 }
 function Weather() {
   _s2();
@@ -748,4 +746,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   Weather as default
 };
-//# sourceMappingURL=/build/routes/weather-BVN52462.js.map
+//# sourceMappingURL=/build/routes/weather-OA5QDPTU.js.map

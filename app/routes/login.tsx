@@ -6,7 +6,7 @@ import { getSession, commitSession } from "../sessions";
 import prisma from "../prismaClient";
 import bcrypt from "bcryptjs";
 
-export const action = async ({ request }) => {
+export const action = async ({ request }: { request: Request }) => {
   const form = await request.formData();
   const username = form.get("username");
   const password = form.get("password");

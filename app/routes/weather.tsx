@@ -18,7 +18,7 @@ type LoaderData = {
   username: string | null;
 };
 
-export const loader = async ({ request }) => {
+export const loader = async ({ request }: { request: Request }) => {
   const userId = await getUserId(request);
 
   const user = await prisma.user.findUnique({
@@ -30,19 +30,19 @@ export const loader = async ({ request }) => {
   const userCities = await prisma.city.findMany({ where: { userId } });
 
   const cities = userCities.map((city) => city.name);
-  const API_KEY = process.env.WEATHER_API_KEY;
+  const API_KEY = process.env.WEATHER_API_KEY as string;
   const weatherData = await fetchWeatherData(cities, API_KEY);
 
   return json<LoaderData>({ weatherData, userId, username });
 };
 
-export const action = async ({ request }) => {
+export const action = async ({ request }: { request: Request }) => {
   const form = await request.formData();
   const action = form.get("_action");
-  const city = form.get("city");
+  const city = form.get("city") as string;
   const userId = await getUserId(request);
 
-  const API_KEY = process.env.WEATHER_API_KEY;
+  const API_KEY = process.env.WEATHER_API_KEY as string;
 
   if (action === "add" || action === "remove") {
     return json(await handleCityUpdate(userId, city, API_KEY, action));

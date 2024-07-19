@@ -7923,7 +7923,6 @@ init_cssGrid();
 init_palette();
 init_sizing();
 init_spacing();
-init_style();
 
 // node_modules/@mui/system/esm/createBox.js
 init_extends();
@@ -8805,7 +8804,6 @@ export {
   resolveBreakpointValues,
   capitalize,
   init_capitalize2 as init_capitalize,
-  getPath,
   extendSxProp,
   init_styleFunctionSx2 as init_styleFunctionSx,
   ClassNameGenerator_default,
@@ -8963,4 +8961,4 @@ react-is/cjs/react-is.development.js:
    * LICENSE file in the root directory of this source tree.
    *)
 */
-//# sourceMappingURL=/build/_shared/chunk-SB7HBWVQ.js.map
+//# sourceMappingURL=/build/_shared/chunk-FFFQLQI3.js.map
