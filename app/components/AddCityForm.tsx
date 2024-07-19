@@ -54,7 +54,7 @@ export default function AddCityForm({ onAddCity }: AddCityFormProps) {
             },
           }}
         >
-          Add City
+          Search
         </Button>
       </Box>
     </form>

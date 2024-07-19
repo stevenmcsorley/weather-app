@@ -177,7 +177,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/AddCityForm.tsx"
   );
-  import.meta.hot.lastModified = "1721399459304.2024";
+  import.meta.hot.lastModified = "1721403513377.3098";
 }
 function AddCityForm({
   onAddCity
@@ -220,7 +220,7 @@ function AddCityForm({
       "&:hover": {
         backgroundColor: "#0097a7"
       }
-    }, children: "Add City" }, void 0, false, {
+    }, children: "Search" }, void 0, false, {
       fileName: "app/components/AddCityForm.tsx",
       lineNumber: 49,
       columnNumber: 9
@@ -265,7 +265,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/WeatherCard.tsx"
   );
-  import.meta.hot.lastModified = "1721400352723.8806";
+  import.meta.hot.lastModified = "1721403667321.252";
 }
 function WeatherCard({
   data,
@@ -289,21 +289,21 @@ function WeatherCard({
     }, children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { "data-testid": "error-message", children: data.error.message }, void 0, false, {
         fileName: "app/components/WeatherCard.tsx",
-        lineNumber: 46,
+        lineNumber: 45,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(IconButton_default, { color: "inherit", size: "small", onClick: handleRemove, "data-testid": "delete-button", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_Delete.default, {}, void 0, false, {
         fileName: "app/components/WeatherCard.tsx",
-        lineNumber: 50,
+        lineNumber: 49,
         columnNumber: 11
       }, this) }, void 0, false, {
         fileName: "app/components/WeatherCard.tsx",
-        lineNumber: 49,
+        lineNumber: 48,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/WeatherCard.tsx",
-      lineNumber: 36,
+      lineNumber: 35,
       columnNumber: 12
     }, this);
   }
@@ -339,11 +339,11 @@ function WeatherCard({
       }
     }, onClick: handleRemove, "data-testid": "delete-button", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_Delete.default, {}, void 0, false, {
       fileName: "app/components/WeatherCard.tsx",
-      lineNumber: 85,
+      lineNumber: 84,
       columnNumber: 9
     }, this) }, void 0, false, {
       fileName: "app/components/WeatherCard.tsx",
-      lineNumber: 76,
+      lineNumber: 75,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "h6", sx: {
@@ -351,7 +351,7 @@ function WeatherCard({
       mb: 1
     }, "data-testid": `city-name-${(_a = data.location) == null ? void 0 : _a.name}`, children: (_b = data.location) == null ? void 0 : _b.name }, void 0, false, {
       fileName: "app/components/WeatherCard.tsx",
-      lineNumber: 88,
+      lineNumber: 87,
       columnNumber: 7
     }, this),
     isLoading ? /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Box_default, { sx: {
@@ -361,11 +361,11 @@ function WeatherCard({
       height: "100%"
     }, "data-testid": "loading-spinner", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(CircularProgress_default, {}, void 0, false, {
       fileName: "app/components/WeatherCard.tsx",
-      lineNumber: 101,
+      lineNumber: 100,
       columnNumber: 11
     }, this) }, void 0, false, {
       fileName: "app/components/WeatherCard.tsx",
-      lineNumber: 95,
+      lineNumber: 94,
       columnNumber: 20
     }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_jsx_dev_runtime2.Fragment, { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Box_default, { sx: {
@@ -376,11 +376,11 @@ function WeatherCard({
         height: "80px"
       }, "data-testid": "weather-icon" }, void 0, false, {
         fileName: "app/components/WeatherCard.tsx",
-        lineNumber: 107,
+        lineNumber: 106,
         columnNumber: 13
       }, this) }, void 0, false, {
         fileName: "app/components/WeatherCard.tsx",
-        lineNumber: 103,
+        lineNumber: 102,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "h2", component: "div", sx: {
@@ -393,7 +393,7 @@ function WeatherCard({
         "\xB0"
       ] }, void 0, true, {
         fileName: "app/components/WeatherCard.tsx",
-        lineNumber: 113,
+        lineNumber: 112,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "h6", sx: {
@@ -401,7 +401,7 @@ function WeatherCard({
         mb: 2
       }, "data-testid": "condition-text", children: (_f = data.current) == null ? void 0 : _f.condition.text }, void 0, false, {
         fileName: "app/components/WeatherCard.tsx",
-        lineNumber: 122,
+        lineNumber: 121,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "body2", sx: {
@@ -414,7 +414,7 @@ function WeatherCard({
         month: "long"
       }) }, void 0, false, {
         fileName: "app/components/WeatherCard.tsx",
-        lineNumber: 129,
+        lineNumber: 128,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Box_default, { sx: {
@@ -436,7 +436,7 @@ function WeatherCard({
               color: "rgba(255, 255, 255, 0.7)"
             } }, void 0, false, {
               fileName: "app/components/WeatherCard.tsx",
-              lineNumber: 154,
+              lineNumber: 153,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "body1", children: [
@@ -444,24 +444,24 @@ function WeatherCard({
               " km/h"
             ] }, void 0, true, {
               fileName: "app/components/WeatherCard.tsx",
-              lineNumber: 159,
+              lineNumber: 158,
               columnNumber: 17
             }, this)
           ] }, void 0, true, {
             fileName: "app/components/WeatherCard.tsx",
-            lineNumber: 150,
+            lineNumber: 149,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "body2", sx: {
             color: "rgba(255, 255, 255, 0.7)"
           }, children: "Wind" }, void 0, false, {
             fileName: "app/components/WeatherCard.tsx",
-            lineNumber: 163,
+            lineNumber: 162,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/components/WeatherCard.tsx",
-          lineNumber: 144,
+          lineNumber: 143,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Box_default, { sx: {
@@ -480,7 +480,7 @@ function WeatherCard({
               color: "rgba(255, 255, 255, 0.7)"
             } }, void 0, false, {
               fileName: "app/components/WeatherCard.tsx",
-              lineNumber: 180,
+              lineNumber: 179,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "body1", children: [
@@ -488,24 +488,24 @@ function WeatherCard({
               "mm"
             ] }, void 0, true, {
               fileName: "app/components/WeatherCard.tsx",
-              lineNumber: 185,
+              lineNumber: 184,
               columnNumber: 17
             }, this)
           ] }, void 0, true, {
             fileName: "app/components/WeatherCard.tsx",
-            lineNumber: 176,
+            lineNumber: 175,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "body2", sx: {
             color: "rgba(255, 255, 255, 0.7)"
           }, children: "Precipitation" }, void 0, false, {
             fileName: "app/components/WeatherCard.tsx",
-            lineNumber: 189,
+            lineNumber: 188,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/components/WeatherCard.tsx",
-          lineNumber: 170,
+          lineNumber: 169,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Box_default, { sx: {
@@ -523,7 +523,7 @@ function WeatherCard({
               color: "rgba(255, 255, 255, 0.7)"
             } }, void 0, false, {
               fileName: "app/components/WeatherCard.tsx",
-              lineNumber: 205,
+              lineNumber: 204,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "body1", children: [
@@ -531,39 +531,39 @@ function WeatherCard({
               "%"
             ] }, void 0, true, {
               fileName: "app/components/WeatherCard.tsx",
-              lineNumber: 210,
+              lineNumber: 209,
               columnNumber: 17
             }, this)
           ] }, void 0, true, {
             fileName: "app/components/WeatherCard.tsx",
-            lineNumber: 201,
+            lineNumber: 200,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "body2", sx: {
             color: "rgba(255, 255, 255, 0.7)"
           }, children: "Humidity" }, void 0, false, {
             fileName: "app/components/WeatherCard.tsx",
-            lineNumber: 214,
+            lineNumber: 213,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/components/WeatherCard.tsx",
-          lineNumber: 196,
+          lineNumber: 195,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/components/WeatherCard.tsx",
-        lineNumber: 141,
+        lineNumber: 140,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/WeatherCard.tsx",
-      lineNumber: 102,
+      lineNumber: 101,
       columnNumber: 18
     }, this)
   ] }, void 0, true, {
     fileName: "app/components/WeatherCard.tsx",
-    lineNumber: 54,
+    lineNumber: 53,
     columnNumber: 10
   }, this);
 }
@@ -751,4 +751,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   Weather as default
 };
-//# sourceMappingURL=/build/routes/weather-V6ZAOW6H.js.map
+//# sourceMappingURL=/build/routes/weather-4KEJONTB.js.map

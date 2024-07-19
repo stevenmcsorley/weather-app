@@ -230,7 +230,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/root.tsx"
   );
-  import.meta.hot.lastModified = "1721394256643.7344";
+  import.meta.hot.lastModified = "1721401593983.4453";
 }
 var Document = _s(withEmotionCache(_c3 = _s(({
   children,
@@ -431,11 +431,6 @@ function ErrorBoundary() {
         fileName: "app/root.tsx",
         lineNumber: 165,
         columnNumber: 13
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("p", { children: "Hey, developer, you should replace this with what you want your users to see." }, void 0, false, {
-        fileName: "app/root.tsx",
-        lineNumber: 166,
-        columnNumber: 13
       }, this)
     ] }, void 0, true, {
       fileName: "app/root.tsx",
@@ -453,7 +448,7 @@ function ErrorBoundary() {
   }
   return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h1", { children: "Unknown Error" }, void 0, false, {
     fileName: "app/root.tsx",
-    lineNumber: 174,
+    lineNumber: 170,
     columnNumber: 10
   }, this);
 }
@@ -475,4 +470,4 @@ export {
   ErrorBoundary,
   App as default
 };
-//# sourceMappingURL=/build/root-27TXUUJX.js.map
+//# sourceMappingURL=/build/root-UMC52VBB.js.map
