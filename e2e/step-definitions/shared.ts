@@ -39,9 +39,9 @@ Then(
 Then(
   "the welcome message should include {string}",
   async function (this: OurWorld, username: string) {
-    const welcomeMessage = (await this.page.textContent(
+    const welcomeMessage = await this.page.textContent(
       '[data-testid="welcome-message"]'
-    )) as string;
-    assert(welcomeMessage.includes(username));
+    );
+    assert(welcomeMessage?.includes(username));
   }
 );

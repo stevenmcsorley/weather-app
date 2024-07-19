@@ -164,9 +164,8 @@ export default function Weather() {
           onClose={handleSnackbarClose}
           severity={snackbar.severity}
           sx={{ width: "100%" }}
-          data-testid="snackbar-message"
         >
-          {snackbar.message}
+          <span data-testid="snackbar-message">{snackbar.message}</span>
         </Alert>
       </Snackbar>
     </Container>
