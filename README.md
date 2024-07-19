@@ -8,7 +8,7 @@ To get started with the weather app, follow these steps:
 
 1. Clone the repository:
 2. Install dependencies:
-3. Seeding and intialising the db happens automatically when the app is started.
+3. Seeding and initialising the db happens automatically when the app is started.
 
 ## Development
 
@@ -78,7 +78,7 @@ I faced several challenges with compatibility between Node.js, Remix, and Materi
 
 Using Node.js version 18.20.3.
 
-Also had several challenges with docker in generarl and mongodb autoamtically initalising.
+Also had several challenges with docker in general and mongodb automatically initialising.
 
 ## Conclusion
 
