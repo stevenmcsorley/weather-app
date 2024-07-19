@@ -44,7 +44,16 @@ export async function handleCityUpdate(
     if (typeof city !== "string" || city.length < 2)
       return { error: "Invalid city name. Please enter a valid city." };
 
-    // Check if the city already exists for the user
+    const cityCount = await prisma.city.count({
+      where: {
+        userId,
+      },
+    });
+
+    if (cityCount >= 5) {
+      return { error: "You can only add up to 5 cities." };
+    }
+
     const existingCity = await prisma.city.findFirst({
       where: {
         userId,
