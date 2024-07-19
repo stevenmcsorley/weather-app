@@ -5,7 +5,7 @@ import { getSession } from "../sessions";
 export async function getUserId(request: Request) {
   const session = await getSession(request.headers.get("Cookie"));
   const userId = session.get("userId");
-  if (!userId) throw redirect("/login");
+  if (!userId) throw redirect("/");
   return userId;
 }
 

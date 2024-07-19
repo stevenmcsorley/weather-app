@@ -8,7 +8,7 @@ Feature: City Search
     Then the user should be taken to the weather page
     And the welcome message should include "ipgautomotive"
 
-    When the user enters "London" in the add city field
-    Then the add city button should be visible
-    And the user clicks on the add city button
-    Then the weather information for "London" should be displayed
+    When the user enters "London" in the search add city field
+    Then the search add city button should be visible
+    And the user clicks on the search add city button
+    Then the search weather information for "London" should be displayed

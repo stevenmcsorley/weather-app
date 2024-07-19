@@ -3,7 +3,7 @@ import { OurWorld } from "../types";
 import assert from "assert";
 
 Given("the user is on the login page", async function (this: OurWorld) {
-  await this.page.goto("http://localhost:3000/login");
+  await this.page.goto("http://localhost:3000");
 });
 
 When(
@@ -45,13 +45,3 @@ Then(
     assert(welcomeMessage.includes(username));
   }
 );
-
-// Then(
-//   "the user should see an error message {string}",
-//   async function (this: OurWorld, message: string) {
-//     const errorMessage = await this.page.textContent(
-//       '[data-testid="error-message"]'
-//     );
-//     assert.strictEqual(errorMessage, message);
-//   }
-// );

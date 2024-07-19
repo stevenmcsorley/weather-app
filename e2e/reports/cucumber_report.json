@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 110868199
+              "duration": 103360099
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1467912100
+              "duration": 1436371199
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1184234800
+              "duration": 1196060899
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1169144900
+              "duration": 1182038200
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1215366900
+              "duration": 1193931500
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3621600
+              "duration": 3375900
             }
           },
           {
@@ -92,7 +92,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1161962700
+              "duration": 1156435999
             }
           },
           {
@@ -100,7 +100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 280700
+              "duration": 134700
             }
           },
           {
@@ -108,7 +108,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 165132500
+              "duration": 163361699
             }
           }
         ],
@@ -127,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 97396499
+              "duration": 82428000
             }
           },
           {
@@ -140,7 +140,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1409608700
+              "duration": 1402213899
             }
           },
           {
@@ -153,7 +153,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1183640300
+              "duration": 1185802799
             }
           },
           {
@@ -166,7 +166,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1176060200
+              "duration": 1169308700
             }
           },
           {
@@ -179,7 +179,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1203188799
+              "duration": 1194312099
             }
           },
           {
@@ -192,7 +192,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1164088800
+              "duration": 1162843299
             }
           },
           {
@@ -200,7 +200,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 46000
+              "duration": 52199
             }
           },
           {
@@ -208,7 +208,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 122377600
+              "duration": 122454599
             }
           }
         ],
@@ -228,17 +228,17 @@
     "elements": [
       {
         "description": "",
-        "id": "city-search;search-for-a-city",
+        "id": "add-and-delete-cities;add-two-cities-and-delete-one",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Search for a city",
+        "name": "Add two cities and delete one",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 62868099
+              "duration": 81936499
             }
           },
           {
@@ -251,7 +251,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1494842299
+              "duration": 1425040299
             }
           },
           {
@@ -264,7 +264,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1183467100
+              "duration": 1182149299
             }
           },
           {
@@ -277,7 +277,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1170442999
+              "duration": 1181092299
             }
           },
           {
@@ -290,7 +290,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1202295700
+              "duration": 1189093100
             }
           },
           {
@@ -303,7 +303,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3014999
+              "duration": 2891200
             }
           },
           {
@@ -316,59 +316,150 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1166330799
+              "duration": 1160897700
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 11,
-            "name": "the user enters \"London\" in the add city field",
+            "name": "the user enters \"London\" in the manage add city field",
             "match": {
-              "location": "step-definitions\\search.ts:5"
+              "location": "step-definitions\\manage_cities.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 1173567799
+              "duration": 1166264499
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 12,
-            "name": "the add city button should be visible",
+            "name": "the manage add city button should be visible",
             "match": {
-              "location": "step-definitions\\search.ts:12"
+              "location": "step-definitions\\manage_cities.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 1171032000
+              "duration": 1156829100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "the user clicks on the add city button",
+            "name": "the user clicks on the manage add city button",
             "match": {
-              "location": "step-definitions\\search.ts:23"
+              "location": "step-definitions\\manage_cities.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 1197305500
+              "duration": 1210795499
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 14,
-            "name": "the weather information for \"London\" should be displayed",
+            "name": "the manage weather information for \"London\" should be displayed",
             "match": {
-              "location": "step-definitions\\search.ts:27"
+              "location": "step-definitions\\manage_cities.ts:33"
             },
             "result": {
               "status": "passed",
-              "duration": 4641109100
+              "duration": 4643134999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "the user enters \"Paris\" in the manage add city field",
+            "match": {
+              "location": "step-definitions\\manage_cities.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1167971799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the manage add city button should be visible",
+            "match": {
+              "location": "step-definitions\\manage_cities.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1167698400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "the user clicks on the manage add city button",
+            "match": {
+              "location": "step-definitions\\manage_cities.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1198225700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the manage weather information for \"Paris\" should be displayed",
+            "match": {
+              "location": "step-definitions\\manage_cities.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4645845399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "the user deletes the city \"London\"",
+            "match": {
+              "location": "step-definitions\\manage_cities.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1199782499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "the weather information for \"London\" should not be displayed",
+            "match": {
+              "location": "step-definitions\\manage_cities.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2572899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the weather information for \"Paris\" should still be displayed",
+            "match": {
+              "location": "step-definitions\\manage_cities.ts:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1151358000
             }
           },
           {
@@ -376,7 +467,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 164700
+              "duration": 50400
             }
           },
           {
@@ -384,7 +475,183 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 337572800
+              "duration": 101444499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-and-delete-cities",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add and delete cities",
+    "tags": [],
+    "uri": "features\\manage_cities.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "city-search;search-for-a-city",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Search for a city",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 86763199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "step-definitions\\shared.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1418686500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters \"ipgautomotive\" in the username field",
+            "match": {
+              "location": "step-definitions\\shared.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1183367500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user enters \"carmaker\" in the password field",
+            "match": {
+              "location": "step-definitions\\shared.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1168164900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on the \"login\" button",
+            "match": {
+              "location": "step-definitions\\shared.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1206015699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the user should be taken to the weather page",
+            "match": {
+              "location": "step-definitions\\shared.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3968800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the welcome message should include \"ipgautomotive\"",
+            "match": {
+              "location": "step-definitions\\shared.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1154788400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user enters \"London\" in the search add city field",
+            "match": {
+              "location": "step-definitions\\search.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1178071500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the search add city button should be visible",
+            "match": {
+              "location": "step-definitions\\search.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1165636599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user clicks on the search add city button",
+            "match": {
+              "location": "step-definitions\\search.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1222943900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the search weather information for \"London\" should be displayed",
+            "match": {
+              "location": "step-definitions\\search.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4630570299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 64899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 356600899
             }
           }
         ],

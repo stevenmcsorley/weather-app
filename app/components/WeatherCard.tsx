@@ -90,7 +90,7 @@ export default function WeatherCard({
           "&:hover": { color: "white" },
         }}
         onClick={handleRemove}
-        data-testid="delete-button"
+        data-testid={`delete-city-${data.location?.name}`}
       >
         <DeleteIcon />
       </IconButton>

@@ -25,12 +25,7 @@ export default function NavBar({ userId, username }: NavBarProps) {
           WeatherApp
         </Typography>
         <Button color="inherit">
-          <StyledNavLink to="/" end>
-            Home
-          </StyledNavLink>
-        </Button>
-        <Button color="inherit">
-          <StyledNavLink to="/weather">Weather</StyledNavLink>
+          <StyledNavLink to="/weather">Home</StyledNavLink>
         </Button>
         {userId ? (
           <>
@@ -45,7 +40,7 @@ export default function NavBar({ userId, username }: NavBarProps) {
           </>
         ) : (
           <Button color="inherit">
-            <StyledNavLink to="/login">Login</StyledNavLink>
+            <StyledNavLink to="/">Login</StyledNavLink>
           </Button>
         )}
       </Toolbar>

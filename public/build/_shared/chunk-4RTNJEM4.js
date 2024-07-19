@@ -1,31 +1,6 @@
 import {
-  Button_default,
-  Container_default,
-  TextField_default,
-  Typography_default,
-  require_node
-} from "/build/_shared/chunk-UO2AQSH4.js";
-import "/build/_shared/chunk-FFFQLQI3.js";
-import "/build/_shared/chunk-PLT55Z5M.js";
-import {
-  Form,
-  useActionData
-} from "/build/_shared/chunk-XU2DGYEO.js";
-import "/build/_shared/chunk-Y6RJRNBS.js";
-import {
-  createHotContext
-} from "/build/_shared/chunk-VBXOWJ6H.js";
-import {
-  require_jsx_dev_runtime
-} from "/build/_shared/chunk-F4KNNEUR.js";
-import {
-  require_react
-} from "/build/_shared/chunk-2Z2JGDFU.js";
-import "/build/_shared/chunk-JR22VO6P.js";
-import {
   __commonJS,
-  __require,
-  __toESM
+  __require
 } from "/build/_shared/chunk-PZDJHGND.js";
 
 // node_modules/bcryptjs/dist/bcrypt.js
@@ -40,7 +15,7 @@ var require_bcrypt = __commonJS({
         (global["dcodeIO"] = global["dcodeIO"] || {})["bcrypt"] = factory();
     })(exports, function() {
       "use strict";
-      var bcrypt2 = {};
+      var bcrypt = {};
       var randomFallback = null;
       function random(len) {
         if (typeof module !== "undefined" && module && module["exports"])
@@ -65,10 +40,10 @@ var require_bcrypt = __commonJS({
       } catch (e) {
       }
       randomFallback = null;
-      bcrypt2.setRandomFallback = function(random2) {
+      bcrypt.setRandomFallback = function(random2) {
         randomFallback = random2;
       };
-      bcrypt2.genSaltSync = function(rounds, seed_length) {
+      bcrypt.genSaltSync = function(rounds, seed_length) {
         rounds = rounds || GENSALT_DEFAULT_LOG2_ROUNDS;
         if (typeof rounds !== "number")
           throw Error("Illegal arguments: " + typeof rounds + ", " + typeof seed_length);
@@ -85,7 +60,7 @@ var require_bcrypt = __commonJS({
         salt.push(base64_encode(random(BCRYPT_SALT_LEN), BCRYPT_SALT_LEN));
         return salt.join("");
       };
-      bcrypt2.genSalt = function(rounds, seed_length, callback) {
+      bcrypt.genSalt = function(rounds, seed_length, callback) {
         if (typeof seed_length === "function")
           callback = seed_length, seed_length = void 0;
         if (typeof rounds === "function")
@@ -97,7 +72,7 @@ var require_bcrypt = __commonJS({
         function _async(callback2) {
           nextTick(function() {
             try {
-              callback2(null, bcrypt2.genSaltSync(rounds));
+              callback2(null, bcrypt.genSaltSync(rounds));
             } catch (err) {
               callback2(err);
             }
@@ -118,19 +93,19 @@ var require_bcrypt = __commonJS({
             });
           });
       };
-      bcrypt2.hashSync = function(s, salt) {
+      bcrypt.hashSync = function(s, salt) {
         if (typeof salt === "undefined")
           salt = GENSALT_DEFAULT_LOG2_ROUNDS;
         if (typeof salt === "number")
-          salt = bcrypt2.genSaltSync(salt);
+          salt = bcrypt.genSaltSync(salt);
         if (typeof s !== "string" || typeof salt !== "string")
           throw Error("Illegal arguments: " + typeof s + ", " + typeof salt);
         return _hash(s, salt);
       };
-      bcrypt2.hash = function(s, salt, callback, progressCallback) {
+      bcrypt.hash = function(s, salt, callback, progressCallback) {
         function _async(callback2) {
           if (typeof s === "string" && typeof salt === "number")
-            bcrypt2.genSalt(salt, function(err, salt2) {
+            bcrypt.genSalt(salt, function(err, salt2) {
               _hash(s, salt2, callback2, progressCallback);
             });
           else if (typeof s === "string" && typeof salt === "string")
@@ -165,14 +140,14 @@ var require_bcrypt = __commonJS({
           return false;
         return wrong === 0;
       }
-      bcrypt2.compareSync = function(s, hash) {
+      bcrypt.compareSync = function(s, hash) {
         if (typeof s !== "string" || typeof hash !== "string")
           throw Error("Illegal arguments: " + typeof s + ", " + typeof hash);
         if (hash.length !== 60)
           return false;
-        return safeStringCompare(bcrypt2.hashSync(s, hash.substr(0, hash.length - 31)), hash);
+        return safeStringCompare(bcrypt.hashSync(s, hash.substr(0, hash.length - 31)), hash);
       };
-      bcrypt2.compare = function(s, hash, callback, progressCallback) {
+      bcrypt.compare = function(s, hash, callback, progressCallback) {
         function _async(callback2) {
           if (typeof s !== "string" || typeof hash !== "string") {
             nextTick(callback2.bind(this, Error("Illegal arguments: " + typeof s + ", " + typeof hash)));
@@ -182,7 +157,7 @@ var require_bcrypt = __commonJS({
             nextTick(callback2.bind(this, null, false));
             return;
           }
-          bcrypt2.hash(s, hash.substr(0, 29), function(err, comp) {
+          bcrypt.hash(s, hash.substr(0, 29), function(err, comp) {
             if (err)
               callback2(err);
             else
@@ -204,12 +179,12 @@ var require_bcrypt = __commonJS({
             });
           });
       };
-      bcrypt2.getRounds = function(hash) {
+      bcrypt.getRounds = function(hash) {
         if (typeof hash !== "string")
           throw Error("Illegal arguments: " + typeof hash);
         return parseInt(hash.split("$")[2], 10);
       };
-      bcrypt2.getSalt = function(hash) {
+      bcrypt.getSalt = function(hash) {
         if (typeof hash !== "string")
           throw Error("Illegal arguments: " + typeof hash);
         if (hash.length !== 60)
@@ -1835,95 +1810,15 @@ var require_bcrypt = __commonJS({
           }, progressCallback);
         }
       }
-      bcrypt2.encodeBase64 = base64_encode;
-      bcrypt2.decodeBase64 = base64_decode;
-      return bcrypt2;
+      bcrypt.encodeBase64 = base64_encode;
+      bcrypt.decodeBase64 = base64_decode;
+      return bcrypt;
     });
   }
 });
 
-// app/routes/login.tsx
-var import_react = __toESM(require_react());
-var import_node = __toESM(require_node());
-var import_bcryptjs = __toESM(require_bcrypt());
-var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime());
-if (!window.$RefreshReg$ || !window.$RefreshSig$ || !window.$RefreshRuntime$) {
-  console.warn("remix:hmr: React Fast Refresh only works when the Remix compiler is running in development mode.");
-} else {
-  prevRefreshReg = window.$RefreshReg$;
-  prevRefreshSig = window.$RefreshSig$;
-  window.$RefreshReg$ = (type, id) => {
-    window.$RefreshRuntime$.register(type, '"app/routes/login.tsx"' + id);
-  };
-  window.$RefreshSig$ = window.$RefreshRuntime$.createSignatureFunctionForTransform;
-}
-var prevRefreshReg;
-var prevRefreshSig;
-var _s = $RefreshSig$();
-if (import.meta) {
-  import.meta.hot = createHotContext(
-    //@ts-expect-error
-    "app/routes/login.tsx"
-  );
-  import.meta.hot.lastModified = "1721395920689.7205";
-}
-function Login() {
-  _s();
-  const actionData = useActionData();
-  const [username, setUsername] = (0, import_react.useState)("");
-  const [password, setPassword] = (0, import_react.useState)("");
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Container_default, { maxWidth: "sm", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Typography_default, { variant: "h4", component: "h1", gutterBottom: true, children: "Login" }, void 0, false, {
-      fileName: "app/routes/login.tsx",
-      lineNumber: 71,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Form, { method: "post", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(TextField_default, { fullWidth: true, label: "Username", name: "username", value: username, onChange: (e) => setUsername(e.target.value), margin: "normal", inputProps: {
-        "data-testid": "username-input"
-      } }, void 0, false, {
-        fileName: "app/routes/login.tsx",
-        lineNumber: 75,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(TextField_default, { fullWidth: true, label: "Password", name: "password", type: "password", value: password, onChange: (e) => setPassword(e.target.value), margin: "normal", inputProps: {
-        "data-testid": "password-input"
-      } }, void 0, false, {
-        fileName: "app/routes/login.tsx",
-        lineNumber: 78,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Button_default, { type: "submit", variant: "contained", color: "primary", "data-testid": "login-button", children: "Login" }, void 0, false, {
-        fileName: "app/routes/login.tsx",
-        lineNumber: 81,
-        columnNumber: 9
-      }, this)
-    ] }, void 0, true, {
-      fileName: "app/routes/login.tsx",
-      lineNumber: 74,
-      columnNumber: 7
-    }, this),
-    (actionData == null ? void 0 : actionData.error) && /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Typography_default, { color: "error", "data-testid": "error-message", children: actionData.error }, void 0, false, {
-      fileName: "app/routes/login.tsx",
-      lineNumber: 85,
-      columnNumber: 29
-    }, this)
-  ] }, void 0, true, {
-    fileName: "app/routes/login.tsx",
-    lineNumber: 70,
-    columnNumber: 10
-  }, this);
-}
-_s(Login, "MICnmMz6wmQFumyKZiGAc4r5wWg=", false, function() {
-  return [useActionData];
-});
-_c = Login;
-var _c;
-$RefreshReg$(_c, "Login");
-window.$RefreshReg$ = prevRefreshReg;
-window.$RefreshSig$ = prevRefreshSig;
 export {
-  Login as default
+  require_bcrypt
 };
 /*! Bundled license information:
 
@@ -1934,4 +1829,4 @@ bcryptjs/dist/bcrypt.js:
    * see: https://github.com/dcodeIO/bcrypt.js for details
    *)
 */
-//# sourceMappingURL=/build/routes/login-Y7BXPRZP.js.map
+//# sourceMappingURL=/build/_shared/chunk-4RTNJEM4.js.map

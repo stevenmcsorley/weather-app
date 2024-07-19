@@ -37,25 +37,21 @@ if (import.meta) {
     //@ts-expect-error
     "app/src/theme.ts"
   );
-  import.meta.hot.lastModified = "1721253078650.254";
+  import.meta.hot.lastModified = "1721404357461.1025";
 }
 var theme = createTheme_default({
   palette: {
     mode: "dark",
-    // Enable dark mode
     primary: {
       main: cyan_default[100],
-      // Adjusted to be more visible on dark background
       contrastText: "#fff"
     },
     secondary: {
       main: green_default[400],
-      // Adjusted to be more visible on dark background
       contrastText: "#fff"
     },
     warning: {
       main: amber_default[500],
-      // Warm yellow for warnings or sunny days
       contrastText: "#000"
     },
     error: {
@@ -63,13 +59,10 @@ var theme = createTheme_default({
     },
     background: {
       default: grey_default[900],
-      // Dark grey background for the app
       paper: grey_default[800]
-      // Slightly lighter grey for cards and other surfaces
     },
     text: {
       primary: "#fff",
-      // Light text for better readability on dark background
       secondary: grey_default[500]
     }
   },
@@ -104,9 +97,7 @@ var theme = createTheme_default({
       styleOverrides: {
         root: {
           borderRadius: "8px",
-          // Rounded corners for buttons
           textTransform: "none"
-          // No uppercase text
         }
       }
     },
@@ -114,11 +105,8 @@ var theme = createTheme_default({
       styleOverrides: {
         root: {
           borderRadius: "12px",
-          // Rounded corners for cards
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
-          // Slightly stronger shadow for dark theme
           backgroundColor: grey_default[800]
-          // Ensuring the card background is dark
         }
       }
     }
@@ -130,4 +118,4 @@ export {
   ClientStyleContext_default,
   theme_default
 };
-//# sourceMappingURL=/build/_shared/chunk-SD3JIY2B.js.map
+//# sourceMappingURL=/build/_shared/chunk-RKGKIN5F.js.map

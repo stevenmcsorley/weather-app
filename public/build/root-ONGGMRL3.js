@@ -1,7 +1,7 @@
 import {
   ClientStyleContext_default,
   theme_default
-} from "/build/_shared/chunk-SD3JIY2B.js";
+} from "/build/_shared/chunk-RKGKIN5F.js";
 import {
   AppBar_default,
   Box_default,
@@ -31,10 +31,10 @@ import {
   useLoaderData,
   useRouteError
 } from "/build/_shared/chunk-XU2DGYEO.js";
-import "/build/_shared/chunk-Y6RJRNBS.js";
 import {
   createHotContext
 } from "/build/_shared/chunk-VBXOWJ6H.js";
+import "/build/_shared/chunk-Y6RJRNBS.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-F4KNNEUR.js";
@@ -112,7 +112,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/NavBar.tsx"
   );
-  import.meta.hot.lastModified = "1721393950067.1274";
+  import.meta.hot.lastModified = "1721407146657.4421";
 }
 var StyledNavLink = styled_default(NavLink)(({
   theme
@@ -138,22 +138,13 @@ function NavBar({
       lineNumber: 42,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Button_default, { color: "inherit", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(StyledNavLink, { to: "/", end: true, children: "Home" }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Button_default, { color: "inherit", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(StyledNavLink, { to: "/weather", children: "Home" }, void 0, false, {
       fileName: "app/components/NavBar.tsx",
       lineNumber: 48,
       columnNumber: 11
     }, this) }, void 0, false, {
       fileName: "app/components/NavBar.tsx",
       lineNumber: 47,
-      columnNumber: 9
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Button_default, { color: "inherit", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(StyledNavLink, { to: "/weather", children: "Weather" }, void 0, false, {
-      fileName: "app/components/NavBar.tsx",
-      lineNumber: 53,
-      columnNumber: 11
-    }, this) }, void 0, false, {
-      fileName: "app/components/NavBar.tsx",
-      lineNumber: 52,
       columnNumber: 9
     }, this),
     userId ? /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_jsx_dev_runtime2.Fragment, { children: [
@@ -165,29 +156,29 @@ function NavBar({
         username || userId
       ] }, void 0, true, {
         fileName: "app/components/NavBar.tsx",
-        lineNumber: 56,
+        lineNumber: 51,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Form, { method: "post", action: "/logout", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Button_default, { color: "inherit", type: "submit", children: "Logout" }, void 0, false, {
         fileName: "app/components/NavBar.tsx",
-        lineNumber: 63,
+        lineNumber: 58,
         columnNumber: 15
       }, this) }, void 0, false, {
         fileName: "app/components/NavBar.tsx",
-        lineNumber: 62,
+        lineNumber: 57,
         columnNumber: 13
       }, this)
     ] }, void 0, true, {
       fileName: "app/components/NavBar.tsx",
-      lineNumber: 55,
+      lineNumber: 50,
       columnNumber: 19
-    }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Button_default, { color: "inherit", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(StyledNavLink, { to: "/login", children: "Login" }, void 0, false, {
+    }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Button_default, { color: "inherit", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(StyledNavLink, { to: "/", children: "Login" }, void 0, false, {
       fileName: "app/components/NavBar.tsx",
-      lineNumber: 68,
+      lineNumber: 63,
       columnNumber: 13
     }, this) }, void 0, false, {
       fileName: "app/components/NavBar.tsx",
-      lineNumber: 67,
+      lineNumber: 62,
       columnNumber: 17
     }, this)
   ] }, void 0, true, {
@@ -230,7 +221,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/root.tsx"
   );
-  import.meta.hot.lastModified = "1721401593983.4453";
+  import.meta.hot.lastModified = "1721406990029.985";
 }
 var Document = _s(withEmotionCache(_c3 = _s(({
   children,
@@ -470,4 +461,4 @@ export {
   ErrorBoundary,
   App as default
 };
-//# sourceMappingURL=/build/root-UMC52VBB.js.map
+//# sourceMappingURL=/build/root-ONGGMRL3.js.map

@@ -25,11 +25,11 @@ import {
   useLoaderData
 } from "/build/_shared/chunk-XU2DGYEO.js";
 import {
-  require_jsx_runtime
-} from "/build/_shared/chunk-Y6RJRNBS.js";
-import {
   createHotContext
 } from "/build/_shared/chunk-VBXOWJ6H.js";
+import {
+  require_jsx_runtime
+} from "/build/_shared/chunk-Y6RJRNBS.js";
 import {
   require_jsx_dev_runtime
 } from "/build/_shared/chunk-F4KNNEUR.js";
@@ -177,7 +177,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/AddCityForm.tsx"
   );
-  import.meta.hot.lastModified = "1721403513377.3098";
+  import.meta.hot.lastModified = "1721403514594.0786";
 }
 function AddCityForm({
   onAddCity
@@ -265,14 +265,14 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/WeatherCard.tsx"
   );
-  import.meta.hot.lastModified = "1721403667321.252";
+  import.meta.hot.lastModified = "1721407395947.6135";
 }
 function WeatherCard({
   data,
   onRemove,
   isLoading = false
 }) {
-  var _a, _b, _c4, _d, _e, _f, _g, _h, _i;
+  var _a, _b, _c4, _d, _e, _f, _g, _h, _i, _j;
   const handleRemove = () => {
     onRemove(data.storedName);
   };
@@ -337,7 +337,7 @@ function WeatherCard({
       "&:hover": {
         color: "white"
       }
-    }, onClick: handleRemove, "data-testid": "delete-button", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_Delete.default, {}, void 0, false, {
+    }, onClick: handleRemove, "data-testid": `delete-city-${(_a = data.location) == null ? void 0 : _a.name}`, children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_Delete.default, {}, void 0, false, {
       fileName: "app/components/WeatherCard.tsx",
       lineNumber: 84,
       columnNumber: 9
@@ -349,7 +349,7 @@ function WeatherCard({
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "h6", sx: {
       textAlign: "center",
       mb: 1
-    }, "data-testid": `city-name-${(_a = data.location) == null ? void 0 : _a.name}`, children: (_b = data.location) == null ? void 0 : _b.name }, void 0, false, {
+    }, "data-testid": `city-name-${(_b = data.location) == null ? void 0 : _b.name}`, children: (_c4 = data.location) == null ? void 0 : _c4.name }, void 0, false, {
       fileName: "app/components/WeatherCard.tsx",
       lineNumber: 87,
       columnNumber: 7
@@ -371,7 +371,7 @@ function WeatherCard({
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Box_default, { sx: {
         textAlign: "center",
         mb: 3
-      }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("img", { src: (_c4 = data.current) == null ? void 0 : _c4.condition.icon, alt: (_d = data.current) == null ? void 0 : _d.condition.text, style: {
+      }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("img", { src: (_d = data.current) == null ? void 0 : _d.condition.icon, alt: (_e = data.current) == null ? void 0 : _e.condition.text, style: {
         width: "80px",
         height: "80px"
       }, "data-testid": "weather-icon" }, void 0, false, {
@@ -389,7 +389,7 @@ function WeatherCard({
         mb: 2,
         color: "#4CAF50"
       }, "data-testid": "temperature", children: [
-        Math.round(((_e = data.current) == null ? void 0 : _e.temp_c) || 0),
+        Math.round(((_f = data.current) == null ? void 0 : _f.temp_c) || 0),
         "\xB0"
       ] }, void 0, true, {
         fileName: "app/components/WeatherCard.tsx",
@@ -399,7 +399,7 @@ function WeatherCard({
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "h6", sx: {
         textAlign: "center",
         mb: 2
-      }, "data-testid": "condition-text", children: (_f = data.current) == null ? void 0 : _f.condition.text }, void 0, false, {
+      }, "data-testid": "condition-text", children: (_g = data.current) == null ? void 0 : _g.condition.text }, void 0, false, {
         fileName: "app/components/WeatherCard.tsx",
         lineNumber: 121,
         columnNumber: 11
@@ -440,7 +440,7 @@ function WeatherCard({
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "body1", children: [
-              (_g = data.current) == null ? void 0 : _g.wind_kph,
+              (_h = data.current) == null ? void 0 : _h.wind_kph,
               " km/h"
             ] }, void 0, true, {
               fileName: "app/components/WeatherCard.tsx",
@@ -484,7 +484,7 @@ function WeatherCard({
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "body1", children: [
-              (_h = data.current) == null ? void 0 : _h.precip_mm,
+              (_i = data.current) == null ? void 0 : _i.precip_mm,
               "mm"
             ] }, void 0, true, {
               fileName: "app/components/WeatherCard.tsx",
@@ -527,7 +527,7 @@ function WeatherCard({
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Typography_default, { variant: "body1", children: [
-              (_i = data.current) == null ? void 0 : _i.humidity,
+              (_j = data.current) == null ? void 0 : _j.humidity,
               "%"
             ] }, void 0, true, {
               fileName: "app/components/WeatherCard.tsx",
@@ -593,7 +593,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/routes/weather.tsx"
   );
-  import.meta.hot.lastModified = "1721396963130.5984";
+  import.meta.hot.lastModified = "1721396966594.6848";
 }
 function Weather() {
   _s2();
@@ -751,4 +751,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   Weather as default
 };
-//# sourceMappingURL=/build/routes/weather-4KEJONTB.js.map
+//# sourceMappingURL=/build/routes/weather-4IW4J2VA.js.map

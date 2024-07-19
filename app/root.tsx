@@ -88,7 +88,7 @@ export const loader: LoaderFunction = async ({ request }) => {
   const isWeatherRoute = url.pathname.startsWith("/weather");
 
   if (!userId && isWeatherRoute) {
-    return redirect("/login");
+    return redirect("/");
   }
 
   let username = null;
