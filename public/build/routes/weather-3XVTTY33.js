@@ -177,7 +177,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/AddCityForm.tsx"
   );
-  import.meta.hot.lastModified = "1721392478236.0398";
+  import.meta.hot.lastModified = "1721395147804.611";
 }
 function AddCityForm({
   onAddCity
@@ -191,31 +191,33 @@ function AddCityForm({
       setCity("");
     }
   };
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("form", { onSubmit: handleSubmit, children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Grid_default, { container: true, spacing: 2, children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Grid_default, { item: true, xs: 8, children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(TextField_default, { fullWidth: true, label: "Add a city", name: "city", value: city, onChange: (e) => setCity(e.target.value), variant: "outlined", InputProps: {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("form", { onSubmit: handleSubmit, children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Box_default, { display: "flex", alignItems: "center", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(TextField_default, { fullWidth: true, label: "Add a city", name: "city", value: city, onChange: (e) => setCity(e.target.value), variant: "outlined", InputProps: {
       startAdornment: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(InputAdornment_default, { position: "start", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_AddLocation.default, {}, void 0, false, {
         fileName: "app/components/AddCityForm.tsx",
-        lineNumber: 42,
-        columnNumber: 19
+        lineNumber: 41,
+        columnNumber: 17
       }, this) }, void 0, false, {
         fileName: "app/components/AddCityForm.tsx",
-        lineNumber: 41,
-        columnNumber: 27
+        lineNumber: 40,
+        columnNumber: 25
       }, this)
+    }, sx: {
+      mr: 2
     } }, void 0, false, {
-      fileName: "app/components/AddCityForm.tsx",
-      lineNumber: 40,
-      columnNumber: 11
-    }, this) }, void 0, false, {
       fileName: "app/components/AddCityForm.tsx",
       lineNumber: 39,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Grid_default, { item: true, xs: 4, children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Button_default, { type: "submit", variant: "contained", color: "primary", fullWidth: true, children: "Add City" }, void 0, false, {
-      fileName: "app/components/AddCityForm.tsx",
-      lineNumber: 47,
-      columnNumber: 11
-    }, this) }, void 0, false, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Button_default, { type: "submit", variant: "contained", color: "primary", sx: {
+      height: "100%",
+      padding: "12px 12px",
+      fontSize: "1rem",
+      backgroundColor: "#00bcd4",
+      "&:hover": {
+        backgroundColor: "#0097a7"
+      }
+    }, children: "Search" }, void 0, false, {
       fileName: "app/components/AddCityForm.tsx",
       lineNumber: 46,
       columnNumber: 9
@@ -588,7 +590,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/routes/weather.tsx"
   );
-  import.meta.hot.lastModified = "1721394790019.6506";
+  import.meta.hot.lastModified = "1721394829011.9846";
 }
 function Weather() {
   _s2();
@@ -746,4 +748,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   Weather as default
 };
-//# sourceMappingURL=/build/routes/weather-OA5QDPTU.js.map
+//# sourceMappingURL=/build/routes/weather-3XVTTY33.js.map

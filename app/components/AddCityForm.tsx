@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid, TextField, Button, InputAdornment } from "@mui/material";
+import { Grid, TextField, Button, InputAdornment, Box } from "@mui/material";
 import AddLocationIcon from "@mui/icons-material/AddLocation";
 
 interface AddCityFormProps {
@@ -19,30 +19,40 @@ export default function AddCityForm({ onAddCity }: AddCityFormProps) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <Grid container spacing={2}>
-        <Grid item xs={8}>
-          <TextField
-            fullWidth
-            label="Add a city"
-            name="city"
-            value={city}
-            onChange={(e) => setCity(e.target.value)}
-            variant="outlined"
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <AddLocationIcon />
-                </InputAdornment>
-              ),
-            }}
-          />
-        </Grid>
-        <Grid item xs={4}>
-          <Button type="submit" variant="contained" color="primary" fullWidth>
-            Add City
-          </Button>
-        </Grid>
-      </Grid>
+      <Box display="flex" alignItems="center">
+        <TextField
+          fullWidth
+          label="Add a city"
+          name="city"
+          value={city}
+          onChange={(e) => setCity(e.target.value)}
+          variant="outlined"
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <AddLocationIcon />
+              </InputAdornment>
+            ),
+          }}
+          sx={{ mr: 2 }}
+        />
+        <Button
+          type="submit"
+          variant="contained"
+          color="primary"
+          sx={{
+            height: "100%",
+            padding: "12px 12px",
+            fontSize: "1rem",
+            backgroundColor: "#00bcd4",
+            "&:hover": {
+              backgroundColor: "#0097a7",
+            },
+          }}
+        >
+          Search
+        </Button>
+      </Box>
     </form>
   );
 }
