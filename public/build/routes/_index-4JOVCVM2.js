@@ -29,7 +29,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/routes/_index.tsx"
   );
-  import.meta.hot.lastModified = "1721391894920.4224";
+  import.meta.hot.lastModified = "1721396912764.3147";
 }
 var meta = () => [{
   title: "Home"
@@ -37,7 +37,7 @@ var meta = () => [{
   description: "Home of app"
 }];
 function Index() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "font-sans p-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "text-3xl", children: "Welcome to RemiSSSx" }, void 0, false, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "font-sans p-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "text-3xl", children: "Welcome to Remix" }, void 0, false, {
     fileName: "app/routes/_index.tsx",
     lineNumber: 28,
     columnNumber: 7
@@ -56,4 +56,4 @@ export {
   Index as default,
   meta
 };
-//# sourceMappingURL=/build/routes/_index-RPTVACT4.js.map
+//# sourceMappingURL=/build/routes/_index-4JOVCVM2.js.map

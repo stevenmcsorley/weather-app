@@ -1865,7 +1865,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/routes/login.tsx"
   );
-  import.meta.hot.lastModified = "1721394585232.6772";
+  import.meta.hot.lastModified = "1721395920689.7205";
 }
 function Login() {
   _s();
@@ -1879,19 +1879,23 @@ function Login() {
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Form, { method: "post", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(TextField_default, { fullWidth: true, label: "Username", name: "username", value: username, onChange: (e) => setUsername(e.target.value), margin: "normal" }, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(TextField_default, { fullWidth: true, label: "Username", name: "username", value: username, onChange: (e) => setUsername(e.target.value), margin: "normal", inputProps: {
+        "data-testid": "username-input"
+      } }, void 0, false, {
         fileName: "app/routes/login.tsx",
         lineNumber: 75,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(TextField_default, { fullWidth: true, label: "Password", name: "password", type: "password", value: password, onChange: (e) => setPassword(e.target.value), margin: "normal" }, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(TextField_default, { fullWidth: true, label: "Password", name: "password", type: "password", value: password, onChange: (e) => setPassword(e.target.value), margin: "normal", inputProps: {
+        "data-testid": "password-input"
+      } }, void 0, false, {
         fileName: "app/routes/login.tsx",
-        lineNumber: 76,
+        lineNumber: 78,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Button_default, { type: "submit", variant: "contained", color: "primary", children: "Login" }, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Button_default, { type: "submit", variant: "contained", color: "primary", "data-testid": "login-button", children: "Login" }, void 0, false, {
         fileName: "app/routes/login.tsx",
-        lineNumber: 77,
+        lineNumber: 81,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
@@ -1899,9 +1903,9 @@ function Login() {
       lineNumber: 74,
       columnNumber: 7
     }, this),
-    (actionData == null ? void 0 : actionData.error) && /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Typography_default, { color: "error", children: actionData.error }, void 0, false, {
+    (actionData == null ? void 0 : actionData.error) && /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Typography_default, { color: "error", "data-testid": "error-message", children: actionData.error }, void 0, false, {
       fileName: "app/routes/login.tsx",
-      lineNumber: 81,
+      lineNumber: 85,
       columnNumber: 29
     }, this)
   ] }, void 0, true, {
@@ -1930,4 +1934,4 @@ bcryptjs/dist/bcrypt.js:
    * see: https://github.com/dcodeIO/bcrypt.js for details
    *)
 */
-//# sourceMappingURL=/build/routes/login-FBUGDFCE.js.map
+//# sourceMappingURL=/build/routes/login-Y7BXPRZP.js.map

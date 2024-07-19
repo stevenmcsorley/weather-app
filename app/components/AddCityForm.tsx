@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid, TextField, Button, InputAdornment, Box } from "@mui/material";
+import { TextField, Button, InputAdornment, Box } from "@mui/material";
 import AddLocationIcon from "@mui/icons-material/AddLocation";
 
 interface AddCityFormProps {
@@ -33,6 +33,9 @@ export default function AddCityForm({ onAddCity }: AddCityFormProps) {
                 <AddLocationIcon />
               </InputAdornment>
             ),
+            inputProps: {
+              "data-testid": "add-city-input",
+            },
           }}
           sx={{ mr: 2 }}
         />
@@ -40,9 +43,10 @@ export default function AddCityForm({ onAddCity }: AddCityFormProps) {
           type="submit"
           variant="contained"
           color="primary"
+          data-testid="add-city-button"
           sx={{
             height: "100%",
-            padding: "12px 12px",
+            padding: "12px",
             fontSize: "1rem",
             backgroundColor: "#00bcd4",
             "&:hover": {
@@ -50,7 +54,7 @@ export default function AddCityForm({ onAddCity }: AddCityFormProps) {
             },
           }}
         >
-          Search
+          Add City
         </Button>
       </Box>
     </form>

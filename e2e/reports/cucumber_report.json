@@ -1,0 +1,402 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-login;user-logs-in-successfully",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User logs in successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 122918599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "step-definitions\\shared.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1431478799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters \"ipgautomotive\" in the username field",
+            "match": {
+              "location": "step-definitions\\shared.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1192976199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user enters \"carmaker\" in the password field",
+            "match": {
+              "location": "step-definitions\\shared.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1180384399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on the \"login\" button",
+            "match": {
+              "location": "step-definitions\\shared.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1208334999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the user should be taken to the weather page",
+            "match": {
+              "location": "step-definitions\\shared.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4664299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the welcome message should include \"ipgautomotive\"",
+            "match": {
+              "location": "step-definitions\\shared.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1167385999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 243000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 156903400
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;user-enters-incorrect-credentials",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "User enters incorrect credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 79916900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "step-definitions\\shared.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1424887799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user enters \"wronguser\" in the username field",
+            "match": {
+              "location": "step-definitions\\shared.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1180077000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the user enters \"wrongpass\" in the password field",
+            "match": {
+              "location": "step-definitions\\shared.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1182471100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the user clicks on the \"login\" button",
+            "match": {
+              "location": "step-definitions\\shared.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1198331000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the user should see an error message \"Invalid username or password\"",
+            "match": {
+              "location": "step-definitions\\login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1168916099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 48399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 132445699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Login",
+    "tags": [],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "city-search;search-for-a-city",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Search for a city",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 99887899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "step-definitions\\shared.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2461419200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters \"ipgautomotive\" in the username field",
+            "match": {
+              "location": "step-definitions\\shared.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1182195699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user enters \"carmaker\" in the password field",
+            "match": {
+              "location": "step-definitions\\shared.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1172736900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user clicks on the \"login\" button",
+            "match": {
+              "location": "step-definitions\\shared.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1187830599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the user should be taken to the weather page",
+            "match": {
+              "location": "step-definitions\\shared.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3317299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the welcome message should include \"ipgautomotive\"",
+            "match": {
+              "location": "step-definitions\\shared.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1161549000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "the user enters \"London\" in the add city field",
+            "match": {
+              "location": "step-definitions\\search.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1174302500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the add city button should be visible",
+            "match": {
+              "location": "step-definitions\\search.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1169557799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user clicks on the add city button",
+            "match": {
+              "location": "step-definitions\\search.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1194805700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the weather information for \"London\" should be displayed",
+            "match": {
+              "location": "step-definitions\\search.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4637014100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 158500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 278228699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "city-search",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "City Search",
+    "tags": [],
+    "uri": "features\\search.feature"
+  }
+]

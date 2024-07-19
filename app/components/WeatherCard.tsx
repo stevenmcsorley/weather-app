@@ -42,8 +42,15 @@ export default function WeatherCard({
           border: "1px solid rgba(255, 255, 255, 0.1)",
         }}
       >
-        <Typography>{data.error.message}</Typography>
-        <IconButton color="inherit" size="small" onClick={handleRemove}>
+        <Typography data-testid="error-message">
+          {data.error.message}
+        </Typography>
+        <IconButton
+          color="inherit"
+          size="small"
+          onClick={handleRemove}
+          data-testid="delete-button"
+        >
           <DeleteIcon />
         </IconButton>
       </Card>
@@ -74,6 +81,7 @@ export default function WeatherCard({
           boxShadow: "0 6px 40px rgba(0, 0, 0, 0.2)",
         },
       }}
+      data-testid="weather-card"
     >
       <IconButton
         sx={{
@@ -84,11 +92,16 @@ export default function WeatherCard({
           "&:hover": { color: "white" },
         }}
         onClick={handleRemove}
+        data-testid="delete-button"
       >
         <DeleteIcon />
       </IconButton>
 
-      <Typography variant="h6" sx={{ textAlign: "center", mb: 1 }}>
+      <Typography
+        variant="h6"
+        sx={{ textAlign: "center", mb: 1 }}
+        data-testid={`city-name-${data.location?.name}`}
+      >
         {data.location?.name}
       </Typography>
 
@@ -100,6 +113,7 @@ export default function WeatherCard({
             alignItems: "center",
             height: "100%",
           }}
+          data-testid="loading-spinner"
         >
           <CircularProgress />
         </Box>
@@ -110,6 +124,7 @@ export default function WeatherCard({
               src={data.current?.condition.icon}
               alt={data.current?.condition.text}
               style={{ width: "80px", height: "80px" }}
+              data-testid="weather-icon"
             />
           </Box>
 
@@ -122,11 +137,16 @@ export default function WeatherCard({
               mb: 2,
               color: "#4CAF50",
             }}
+            data-testid="temperature"
           >
             {Math.round(data.current?.temp_c || 0)}°
           </Typography>
 
-          <Typography variant="h6" sx={{ textAlign: "center", mb: 2 }}>
+          <Typography
+            variant="h6"
+            sx={{ textAlign: "center", mb: 2 }}
+            data-testid="condition-text"
+          >
             {data.current?.condition.text}
           </Typography>
 
@@ -137,6 +157,7 @@ export default function WeatherCard({
               mb: 3,
               color: "rgba(255, 255, 255, 0.7)",
             }}
+            data-testid="date"
           >
             {new Date().toLocaleDateString("en-US", {
               weekday: "long",
@@ -153,6 +174,7 @@ export default function WeatherCard({
                 alignItems: "center",
                 mb: 2,
               }}
+              data-testid="wind-info"
             >
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <AirIcon
@@ -181,6 +203,7 @@ export default function WeatherCard({
                 alignItems: "center",
                 mb: 2,
               }}
+              data-testid="precip-info"
             >
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <UmbrellaIcon
@@ -208,6 +231,7 @@ export default function WeatherCard({
                 justifyContent: "space-between",
                 alignItems: "center",
               }}
+              data-testid="humidity-info"
             >
               <Box sx={{ display: "flex", alignItems: "center" }}>
                 <OpacityIcon

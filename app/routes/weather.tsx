@@ -137,12 +137,13 @@ export default function Weather() {
         component="h1"
         gutterBottom
         sx={{ color: "white", mb: 4 }}
+        data-testid="welcome-message"
       >
         Welcome to the weather app, {username || userId}{" "}
         {/* Display username or userId */}
       </Typography>
       <AddCityForm onAddCity={handleAddCity} />
-      <Grid container spacing={3} sx={{ mt: 4 }}>
+      <Grid container spacing={3} sx={{ mt: 4 }} data-testid="weather-cards">
         {optimisticWeatherData.map((data, index) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
             <WeatherCard
@@ -163,6 +164,7 @@ export default function Weather() {
           onClose={handleSnackbarClose}
           severity={snackbar.severity}
           sx={{ width: "100%" }}
+          data-testid="snackbar-message"
         >
           {snackbar.message}
         </Alert>

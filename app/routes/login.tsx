@@ -54,6 +54,7 @@ export default function Login() {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           margin="normal"
+          inputProps={{ "data-testid": "username-input" }}
         />
         <TextField
           fullWidth
@@ -63,13 +64,21 @@ export default function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           margin="normal"
+          inputProps={{ "data-testid": "password-input" }}
         />
-        <Button type="submit" variant="contained" color="primary">
+        <Button
+          type="submit"
+          variant="contained"
+          color="primary"
+          data-testid="login-button"
+        >
           Login
         </Button>
       </Form>
       {actionData?.error && (
-        <Typography color="error">{actionData.error}</Typography>
+        <Typography color="error" data-testid="error-message">
+          {actionData.error}
+        </Typography>
       )}
     </Container>
   );
