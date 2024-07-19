@@ -221,7 +221,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/root.tsx"
   );
-  import.meta.hot.lastModified = "1721406990029.985";
+  import.meta.hot.lastModified = "1721406991148.0833";
 }
 var Document = _s(withEmotionCache(_c3 = _s(({
   children,
@@ -461,4 +461,4 @@ export {
   ErrorBoundary,
   App as default
 };
-//# sourceMappingURL=/build/root-ONGGMRL3.js.map
+//# sourceMappingURL=/build/root-DKC5ZAZK.js.map

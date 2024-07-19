@@ -62,7 +62,6 @@ This also has a feature I was working on which will automatically create Jira ti
 
 ## TODOs and Improvements
 
-- Make Home the Login ( 2 mins job)
 - Refactor the helpers to have more single responsibility.
 - Move sessions to the utility folder.
 - Clean up a lot of the inline CSS in the MUI components to be more in line with a theme.

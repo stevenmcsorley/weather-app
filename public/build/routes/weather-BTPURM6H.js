@@ -265,7 +265,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/WeatherCard.tsx"
   );
-  import.meta.hot.lastModified = "1721407395947.6135";
+  import.meta.hot.lastModified = "1721407410732.9565";
 }
 function WeatherCard({
   data,
@@ -751,4 +751,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   Weather as default
 };
-//# sourceMappingURL=/build/routes/weather-4IW4J2VA.js.map
+//# sourceMappingURL=/build/routes/weather-BTPURM6H.js.map
