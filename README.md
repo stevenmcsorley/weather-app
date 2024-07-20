@@ -62,7 +62,6 @@ This also has a feature I was working on which will automatically create Jira ti
 
 ## TODOs and Improvements
 
-- Move sessions to the utility folder.
 - Clean up a lot of the inline CSS in the MUI components to be more in line with a theme.
 - Create a production version as well as the development version.
 - Improve error handling and messaging.

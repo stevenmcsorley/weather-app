@@ -17,28 +17,29 @@ services:
       - /app/node_modules
     depends_on:
       - mongo
-      - mongo-init
-
+    networks:
+      - default
   mongo:
-    image: mongo:4.4
+    build: ./mongodb_rs
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: mongo
+      MONGO_REPLICA_HOST: mongo
+      MONGO_REPLICA_PORT: 27017
     ports:
       - "27017:27017"
-    volumes:
-      - mongodb_data:/data/db
-    command: mongod --replSet rs0 --bind_ip_all
-
-  mongo-init:
-    image: mongo:4.4
-    depends_on:
-      - mongo
-    entrypoint:
-      [
-        "/bin/sh",
-        "-c",
-        'until mongo --host mongo --eval ''print("waited for connection")''; do sleep 2; done && mongo --host mongo --eval ''rs.initiate({_id: "rs0", members: [{ _id: 0, host: "mongo:27017" }]});''',
-      ]
-    volumes:
-      - ./init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh
-
+    networks:
+      - default
+    healthcheck:
+      test: ["CMD", "mongo", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 volumes:
   mongodb_data:
+
+networks:
+  default:
+    driver: bridge
