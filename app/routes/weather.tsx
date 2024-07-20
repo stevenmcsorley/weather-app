@@ -161,6 +161,7 @@ export default function Weather() {
         anchorOrigin={{ vertical: "top", horizontal: "center" }}
       >
         <Alert
+          data-testid={`snackbar-alert-${snackbar.severity}`}
           onClose={handleSnackbarClose}
           severity={snackbar.severity}
           sx={{ width: "100%" }}

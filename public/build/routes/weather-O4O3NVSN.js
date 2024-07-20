@@ -593,7 +593,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/routes/weather.tsx"
   );
-  import.meta.hot.lastModified = "1721431179573.6887";
+  import.meta.hot.lastModified = "1721435213610.9197";
 }
 function Weather() {
   _s2();
@@ -723,7 +723,7 @@ function Weather() {
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Snackbar_default, { open: snackbar.open, autoHideDuration: 6e3, onClose: handleSnackbarClose, anchorOrigin: {
       vertical: "top",
       horizontal: "center"
-    }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Alert_default, { onClose: handleSnackbarClose, severity: snackbar.severity, sx: {
+    }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(Alert_default, { "data-testid": `snackbar-alert-${snackbar.severity}`, onClose: handleSnackbarClose, severity: snackbar.severity, sx: {
       width: "100%"
     }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { "data-testid": "snackbar-message", children: snackbar.message }, void 0, false, {
       fileName: "app/routes/weather.tsx",
@@ -755,4 +755,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   Weather as default
 };
-//# sourceMappingURL=/build/routes/weather-ECZRD3XK.js.map
+//# sourceMappingURL=/build/routes/weather-O4O3NVSN.js.map
