@@ -12,7 +12,7 @@ module.exports = {
     port: 3000,
   },
   ignoredRouteFiles: ["**/.*"],
-  serverModuleFormat: "cjs", // default value, can be removed
+  serverModuleFormat: "cjs",
   appDirectory: "app",
   assetsBuildDirectory: "public/build",
   publicPath: "/build/",

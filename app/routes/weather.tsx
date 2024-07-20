@@ -10,7 +10,7 @@ import {
 import AddCityForm from "../components/AddCityForm";
 import WeatherCard from "../components/WeatherCard";
 import { WeatherData } from "../types";
-import prisma from "~/prismaClient";
+import prisma from "../prismaClient";
 
 type LoaderData = {
   weatherData: (WeatherData & { storedName: string })[];
@@ -139,8 +139,7 @@ export default function Weather() {
         sx={{ color: "white", mb: 4 }}
         data-testid="welcome-message"
       >
-        Welcome to the weather app, {username || userId}{" "}
-        {/* Display username or userId */}
+        Welcome to the weather app, {username || userId}
       </Typography>
       <AddCityForm onAddCity={handleAddCity} />
       <Grid container spacing={3} sx={{ mt: 4 }} data-testid="weather-cards">

@@ -13,7 +13,7 @@ import {
 import { json, redirect, LoaderFunction } from "@remix-run/node";
 import { withEmotionCache } from "@emotion/react";
 import { unstable_useEnhancedEffect as useEnhancedEffect } from "@mui/material";
-import theme from "./src/theme";
+import theme from "./theme";
 import ClientStyleContext from "./utils/ClientStyleContext";
 import Layout from "./components/Layout";
 import NavBar from "./components/NavBar";

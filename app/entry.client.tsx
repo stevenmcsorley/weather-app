@@ -6,7 +6,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import ClientStyleContext from "./utils/ClientStyleContext";
 import createEmotionCache from "./utils/createEmotionCache";
-import theme from "./src/theme";
+import theme from "./theme";
 
 if (process.env.NODE_ENV === "development") {
   console.log("HMR enabled");
