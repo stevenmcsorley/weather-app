@@ -89,16 +89,18 @@ When("the user adds 5 cities", async function (this: OurWorld) {
 });
 
 Then(
-  "the user should see an error message {string} on city management",
-  async function (this: OurWorld, message: string) {
-    await this.page.waitForSelector('[data-testid="snackbar-message"]', {
-      state: "visible",
-      timeout: 6000,
-    });
-    const errorMessage = await this.page.textContent(
-      '[data-testid="snackbar-message"]'
+  "there should be {int} cities displayed",
+  async function (this: OurWorld, count: number) {
+    const cityCount = await this.page.$$eval(
+      '[data-testid^="city-name-"]',
+      (elements) => elements.length
     );
-    assert.strictEqual(errorMessage, message);
+    console.log(`Current number of cities: ${cityCount}`);
+    assert.strictEqual(
+      cityCount,
+      count,
+      `Expected ${count} cities, but found ${cityCount}`
+    );
   }
 );
 

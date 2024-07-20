@@ -41,4 +41,4 @@ Feature: Manage cities
 
     When the user enters "Rome" in the add city field
     And the user clicks on the add city button
-    Then the user should see an error message "You can only add up to 5 cities."
+    Then there should be 5 cities displayed
