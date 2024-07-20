@@ -1,7 +1,27 @@
-import { redirect } from "@remix-run/node";
+import { redirect, createCookieSessionStorage } from "@remix-run/node";
 import prisma from "../prismaClient";
-import { getSession } from "../sessions";
 
+// Session management
+const sessionSecret = process.env.SESSION_SECRET;
+if (!sessionSecret) {
+  throw new Error("SESSION_SECRET must be set");
+}
+const { getSession, commitSession, destroySession } =
+  createCookieSessionStorage({
+    cookie: {
+      name: "__session",
+      httpOnly: true,
+      maxAge: 60 * 60 * 24 * 7, // 1 week
+      path: "/",
+      sameSite: "lax",
+      secrets: [sessionSecret],
+      secure: process.env.NODE_ENV === "production",
+    },
+  });
+
+export { getSession, commitSession, destroySession };
+
+// User management
 export async function getUserId(request: Request) {
   const session = await getSession(request.headers.get("Cookie"));
   const userId = session.get("userId");
@@ -9,6 +29,7 @@ export async function getUserId(request: Request) {
   return userId;
 }
 
+// Weather data management
 export async function fetchWeatherData(cities: string[], apiKey: string) {
   return await Promise.all(
     cities.map((city) => fetchCityWeather(city, apiKey))
@@ -36,6 +57,7 @@ async function fetchCityWeather(city: string, apiKey: string) {
   }
 }
 
+// City management
 export async function handleCityUpdate(
   userId: string,
   city: string,

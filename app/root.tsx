@@ -14,10 +14,10 @@ import { json, redirect, LoaderFunction } from "@remix-run/node";
 import { withEmotionCache } from "@emotion/react";
 import { unstable_useEnhancedEffect as useEnhancedEffect } from "@mui/material";
 import theme from "./src/theme";
-import ClientStyleContext from "./src/ClientStyleContext";
-import Layout from "./src/Layout";
+import ClientStyleContext from "./utils/ClientStyleContext";
+import Layout from "./components/Layout";
 import NavBar from "./components/NavBar";
-import { getSession } from "./sessions";
+import { getSession } from "./utils/helpers";
 import prisma from "./prismaClient";
 
 interface DocumentProps {

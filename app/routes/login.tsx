@@ -2,7 +2,7 @@ import { useState } from "react";
 import { json, redirect } from "@remix-run/node";
 import { useActionData, Form } from "@remix-run/react";
 import { Container, TextField, Button, Typography } from "@mui/material";
-import { getSession, commitSession } from "../sessions";
+import { getSession, commitSession } from "../utils/helpers";
 import prisma from "../prismaClient";
 import bcrypt from "bcryptjs";
 
