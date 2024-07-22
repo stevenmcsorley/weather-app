@@ -104,9 +104,6 @@ export const loader: LoaderFunction = async ({ request }) => {
   return json({
     userId,
     username,
-    ENV: {
-      API_URL: process.env.API_URL,
-    },
   });
 };
 
